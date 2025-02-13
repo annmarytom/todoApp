@@ -1,0 +1,52 @@
+#data-id {
+    margin-left: 200px;
+    background-color: beige;
+    width: 800px;
+    height: 600px;
+    color: rgb(11, 3, 91);
+    padding: 100px;
+}
+#heading{
+    color: rgb(11, 3, 91);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#btn-id {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+#btn-id:hover {
+    opacity: 1
+}
+#cancel-btn-id{
+    background-color: #42ec27;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 100px;
+}
+#cancel-btn-id:hover {
+    opacity: 1
+}

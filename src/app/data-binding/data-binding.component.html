@@ -1,0 +1,51 @@
+<p>data-binding works!</p>
+<div id="data-id">
+    <h3 id="heading">personal Details Form</h3><br><br>
+    <label>enter your name :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" [(ngModel)]="PersonName">
+    <br><br>
+    <label>Address
+        :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="textarea">
+    <br><br>
+    <label>Age
+        :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="number">
+    <br><br>
+    <label>Sex
+        :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" value="f"><label>Female</label>
+    <input type="radio" value="m"><label>Male</label>
+    <br><br>
+    <label>State
+        :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select>
+        <option value="Kerala">Kerala</option>
+        <option value="Karnadaka">Karnadaka</option>
+        <option value="Thamilnadu">Thamilnadu</option>
+        <option value="panjab">panjab</option>
+    </select>
+    <br><br>
+    <label>Pin-code
+        :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="number">
+    <br><br><br>
+    <button id="btn-id" (click)="showSubmit()" >SUBMIT</button>
+    <button id="cancel-btn-id" (click)="showCancelBtnClick('Application not submission failed')">CANCEL</button>
+</div>
+
+<div>
+    <p>example of inerpolation</p>
+    <p>-----------------------------</p>
+    <p>The Above {{dataName}}</p>
+</div>
+
+<div>
+    <p>example of property binding</p>
+    <input type="text" [value]="PersonName">
+</div>
+
+<div>
+    <p>example of 2 way data binding</p>
+    <input type="text"   [(ngModel)]="PersonName">
+</div>
